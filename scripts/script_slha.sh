@@ -777,10 +777,10 @@ echo "    4   4 $ZNi44 # iZN44 "
 
 echo ""
 
-UM11="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
-UM12="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
-UM21="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
-UM22="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
+UM11="`awk -v i=400 -v j=3 'FNR == i {print $j}' $file`"
+UM12="`awk -v i=401 -v j=3 'FNR == i {print $j}' $file`"
+UM21="`awk -v i=402 -v j=3 'FNR == i {print $j}' $file`"
+UM22="`awk -v i=403 -v j=3 'FNR == i {print $j}' $file`"
 
 echo "###################################"
 echo "## INFORMATION FOR UMIX"
@@ -790,6 +790,23 @@ echo "    1   1 $UM11 # rUM11 "
 echo "    1   2 $UM12 # rUM12 "
 echo "    2   1 $UM21 # rUM21 "
 echo "    2   2 $UM22 # rUM22 "
+
+
+echo ""
+
+VM11="`awk -v i=405 -v j=3 'FNR == i {print $j}' $file`"
+VM12="`awk -v i=406 -v j=3 'FNR == i {print $j}' $file`"
+VM21="`awk -v i=407 -v j=3 'FNR == i {print $j}' $file`"
+VM22="`awk -v i=408 -v j=3 'FNR == i {print $j}' $file`"
+
+echo "###################################"
+echo "## INFORMATION FOR VMIX"
+echo "###################################"
+echo "Block vmix "
+echo "    1   1 $VM11 # rVM11 "
+echo "    1   2 $VM12 # rVM12 "
+echo "    2   1 $VM21 # rVM21 "
+echo "    2   2 $VM22 # rVM22 "
 
 
 echo ""
