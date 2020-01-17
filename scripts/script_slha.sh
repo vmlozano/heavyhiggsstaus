@@ -811,6 +811,107 @@ echo "    2   2 $VM22 # rVM22 "
 
 echo ""
 
+  dhh1="`grep "DECAY        25" $file | awk '{print $3}'`"
+  dhh2="`grep "DECAY        35" $file | awk '{print $3}'`"
+  dah2="`grep "DECAY        36" $file | awk '{print $3}'`"
+  dhpm="`grep "DECAY        37" $file | awk '{print $3}'`"
+
+  dsd1="`grep "DECAY   1000001" $file | awk '{print $3}'`"
+  dsd2="`grep "DECAY   1000003" $file | awk '{print $3}'`"
+  dsd3="`grep "DECAY   1000005" $file | awk '{print $3}'`"
+  dsd4="`grep "DECAY   2000001" $file | awk '{print $3}'`"
+  dsd5="`grep "DECAY   2000003" $file | awk '{print $3}'`"
+  dsd6="`grep "DECAY   2000005" $file | awk '{print $3}'`"
+
+  dsu1="`grep "DECAY   1000002" $file | awk '{print $3}'`"
+  dsu2="`grep "DECAY   1000004" $file | awk '{print $3}'`"
+  dsu3="`grep "DECAY   1000006" $file | awk '{print $3}'`"
+  dsu4="`grep "DECAY   2000002" $file | awk '{print $3}'`"
+  dsu5="`grep "DECAY   2000004" $file | awk '{print $3}'`"
+  dsu6="`grep "DECAY   2000006" $file | awk '{print $3}'`"
+
+  dse1="`grep "DECAY   1000011" $file | awk '{print $3}'`"
+  dse2="`grep "DECAY   1000013" $file | awk '{print $3}'`"
+  dse3="`grep "DECAY   1000015" $file | awk '{print $3}'`"
+  dse4="`grep "DECAY   2000011" $file | awk '{print $3}'`"
+  dse5="`grep "DECAY   2000013" $file | awk '{print $3}'`"
+  dse6="`grep "DECAY   2000015" $file | awk '{print $3}'`"
+
+  dsv1="`grep "DECAY   1000012" $file | awk '{print $3}'`"
+  dsv2="`grep "DECAY   1000014" $file | awk '{print $3}'`"
+  dsv3="`grep "DECAY   1000016" $file | awk '{print $3}'`"
+
+#  dglu="`grep "DECAY        37" $file | awk '{print $3}'`"
+
+#  dnn1="`grep "DECAY        37" $file | awk '{print $3}'`"
+  dnn2="`grep "DECAY   1000023" $file | awk '{print $3}'`"
+  dnn3="`grep "DECAY   1000025" $file | awk '{print $3}'`"
+  dnn4="`grep "DECAY   1000035" $file | awk '{print $3}'`"
+
+  dch1="`grep "DECAY   1000024" $file | awk '{print $3}'`"
+  dch2="`grep "DECAY   1000037" $file | awk '{print $3}'`"
+
+echo "###################################"
+echo "## INFORMATION FOR DECAY"
+echo "###################################"
+echo "DECAY   6 1.510000e+00 # Wu3 "
+echo "DECAY  23 2.495200e+00 # WZ "
+echo "DECAY  24 2.141000e+00 # WWm "
+echo "DECAY  25 $dhh1 # Wh1 "
+echo "DECAY  35 $dhh2 # Wh2 "
+echo "DECAY  36 $dah2 # WAh2 "
+echo "DECAY  37 $dhpm # WHm2 "
+echo "DECAY 1000001 $dsd1 # Wsd1 "
+echo "DECAY 1000003 $dsd2 # Wsd2 "
+echo "DECAY 1000005 $dsd3 # Wsd3 "
+echo "DECAY 2000001 $dsd4 # Wsd4 "
+echo "DECAY 2000003 $dsd5 # Wsd5 "
+echo "DECAY 2000005 $dsd6 # Wsd6 "
+echo "DECAY 1000002 $dsu1 # Wsu1 "
+echo "DECAY 1000004 $dsu2 # Wsu2 "
+echo "DECAY 1000006 $dsu3 # Wsu3 "
+echo "DECAY 2000002 $dsu4 # Wsu4 "
+echo "DECAY 2000004 $dsu5 # Wsu5 "
+echo "DECAY 2000006 $dsu6 # Wsu6 "
+echo "DECAY 1000011 $dse1 # Wse1 "
+echo "DECAY 1000013 $dse2 # Wse2 "
+echo "DECAY 1000015 $dse3 # Wse3 "
+echo "DECAY 2000011 $dse4 # Wse4 "
+echo "DECAY 2000013 $dse5 # Wse5 "
+echo "DECAY 2000015 $dse6 # Wse6 "
+echo "DECAY 1000012 $dsv1 # Wsv1 "
+echo "DECAY 1000014 $dsv2 # Wsv2 "
+echo "DECAY 1000016 $dsv3 # Wsv3 "
+echo "DECAY 1000021 0.000000e+00 # Wgo "
+echo "DECAY 1000022 0.000000e+00 # WN1 "
+echo "DECAY 1000023 $dnn2 # WN2 "
+echo "DECAY 1000025 $dnn3 # WN3 "
+echo "DECAY 1000035 $dnn4 # WN4 "
+echo "DECAY 1000024 $dch1 # WC1 "
+echo "DECAY 1000037 $dch2 # WC2 "
+## Dependent parameters, given by model restrictions.
+## Those values should be edited following the 
+## analytical expression. MG5 ignores those values 
+## but they are important for interfacing the output of MG5
+## to external program such as Pythia.
+echo "DECAY  1 0.000000e+00 # d1 : 0.0 "
+echo "DECAY  2 0.000000e+00 # u1 : 0.0 "
+echo "DECAY  3 0.000000e+00 # d2 : 0.0 "
+echo "DECAY  4 0.000000e+00 # u2 : 0.0 "
+echo "DECAY  5 0.000000e+00 # d3 : 0.0 "
+echo "DECAY  11 0.000000e+00 # e1 : 0.0 "
+echo "DECAY  12 0.000000e+00 # nu1 : 0.0 "
+echo "DECAY  13 0.000000e+00 # e2 : 0.0 "
+echo "DECAY  14 0.000000e+00 # nu2 : 0.0 "
+echo "DECAY  15 0.000000e+00 # e3 : 0.0 "
+echo "DECAY  16 0.000000e+00 # nu3 : 0.0 "
+echo "DECAY  21 0.000000e+00 # g : 0.0 "
+echo "DECAY  22 0.000000e+00 # a : 0.0 "
+echo "DECAY  -1000024 $dch1 # c1 : WC1 "
+echo "DECAY  -1000037 $dch2 # c2 : WC2 "
+
+echo ""
+
 #echo ""
 
 ####
@@ -842,12 +943,13 @@ echo ""
 #Block snumix 
 #Block nmix 
 #Block inmix
+#Block umix 
+#Block vmix 
 
 #BLOCS TO DO:
 
 #DECAY
-#Block umix 
-#Block vmix 
+
 
 
 
