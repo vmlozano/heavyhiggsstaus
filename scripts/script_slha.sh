@@ -912,55 +912,156 @@ echo "DECAY  -1000037 $dch2 # c2 : WC2 "
 
 echo ""
 
-#echo ""
-
-####
-#### BLOCKS FROM PARAM_CARD
-####
-
-#BLOCS ALREADY DONE:
-
-#Block sminputs 
-#Block phases 
-#Block hmix 
-#Block effhiggscouplings 
-#Block yd 
-#Block ye 
-#Block yu 
-#Block td 
-#Block te 
-#Block tu 
-#Block mass 
-#Block dsqmix 
-#Block usqmix 
-#Block udlmix 
-#Block udrmix 
-#Block uulmix 
-#Block uurmix 
-#Block uelmix 
-#Block uermix 
-#Block selmix 
-#Block snumix 
-#Block nmix 
-#Block inmix
-#Block umix 
-#Block vmix 
-
-#BLOCS TO DO:
-
-#DECAY
-
-
-
-
-
-
-
-
-
-
-
-
+echo "#==========================================================="
+echo "# QUANTUM NUMBERS OF NEW STATE(S) (NON SM PDG CODE)"
+echo "#==========================================================="
+echo ""
+echo "Block QNUMBERS 1000021  # go "
+echo "        1 0  # 3 times electric charge"
+echo "        2 2  # number of spin states (2S+1)"
+echo "        3 8  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000022  # n1 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 2  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000023  # n2 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 2  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000025  # n3 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 2  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000035  # n4 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 2  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000001  # sd1 "
+echo "        1 -1  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000003  # sd2 "
+echo "        1 -1  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000005  # sd3 "
+echo "        1 -1  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000001  # sd4 "
+echo "        1 -1  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000003  # sd5 "
+echo "        1 -1  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000005  # sd6 "
+echo "        1 -1  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000012  # sv1 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000014  # sv2 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000016  # sv3 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000002  # su1 "
+echo "        1 2  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000004  # su2 "
+echo "        1 2  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000006  # su3 "
+echo "        1 2  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000002  # su4 "
+echo "        1 2  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000004  # su5 "
+echo "        1 2  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000006  # su6 "
+echo "        1 2  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 3  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000011  # se1 "
+echo "        1 -3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000013  # se2 "
+echo "        1 -3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 1000015  # se3 "
+echo "        1 -3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000011  # se4 echo "
+echo "        1 -3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000013  # se5 "
+echo "        1 -3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 2000015  # se6 "
+echo "        1 -3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 35  # h2 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 36  # ah2 "
+echo "        1 0  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 0  # Particle/Antiparticle distinction (0=own anti)"
+echo "Block QNUMBERS 37  # hm2c "
+echo "        1 3  # 3 times electric charge"
+echo "        2 1  # number of spin states (2S+1)"
+echo "        3 1  # colour rep (1: singlet, 3: triplet, 8: octet)"
+echo "        4 1  # Particle/Antiparticle distinction (0=own anti)"
+echo ""
 #
 #
 #
