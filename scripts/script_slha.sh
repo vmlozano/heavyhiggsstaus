@@ -777,6 +777,23 @@ echo "    4   4 $ZNi44 # iZN44 "
 
 echo ""
 
+UM11="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
+UM12="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
+UM21="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
+UM22="`awk -v i=383 -v j=3 'FNR == i {print $j}' $file`"
+
+echo "###################################"
+echo "## INFORMATION FOR UMIX"
+echo "###################################"
+echo "Block umix "
+echo "    1   1 $UM11 # rUM11 "
+echo "    1   2 $UM12 # rUM12 "
+echo "    2   1 $UM21 # rUM21 "
+echo "    2   2 $UM22 # rUM22 "
+
+
+echo ""
+
 #echo ""
 
 ####
@@ -806,15 +823,12 @@ echo ""
 #Block uermix 
 #Block selmix 
 #Block snumix 
+#Block nmix 
+#Block inmix
 
 #BLOCS TO DO:
 
 #DECAY
-
-
-
-#Block nmix 
-#Block inmix
 #Block umix 
 #Block vmix 
 
